@@ -4,8 +4,11 @@ html {
 }
 
 .header{
+	position: fixed;
 	background: #F2E7D5;
-	height: 5.5rem;
+/*	height: 5.5rem;*/
+	width: 100vw;
+	z-index: 1000;
 }
 
 body{
@@ -17,13 +20,12 @@ body{
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Source Sans Pro', sans-serif;
-  display: flex;
-  flex-direction: column;
 }
 
 #home{
 /*	min-height: 50rem;
   max-height: 120rem;*/
+  padding-top: 5rem;
   position:relative;
   min-height: 100vh;
 }
