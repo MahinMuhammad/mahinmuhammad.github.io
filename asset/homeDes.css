@@ -106,7 +106,7 @@ h1{
 }
 
 .header__link{
-		padding: 2.2rem 3rem;
+		padding-right: 2rem;
 /*    display: inline-block;*/
     font-size: 1.1rem;
     color: #333;
