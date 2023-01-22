@@ -1,6 +1,6 @@
 html {
 /*    font-size: 62.5%;*/
-    scroll-behavior:smooth
+    scroll-behavior:smooth;
 }
 
 .header{
@@ -16,12 +16,21 @@ body{
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#home{
+/*	min-height: 50rem;
+  max-height: 120rem;*/
+  position:relative;
+/*  height: 100vh;*/
 }
 
 #logo{
-	height: 400px;
-	width: 400px;
+	height: 25rem;
+	width: 25rem;
 }
 
 .center {
@@ -58,15 +67,21 @@ h1{
 }
 
 #footer{
-	margin-top: 3rem;
 	background: #393E46;
 	height: 15rem;
 }
+
+@media screen and (min-height: 100vh){
+	#home{
+		height: 100vh;
+	}
+}
+
 #header-content{
 	  display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1rem 5rem;
+    padding:1rem 4rem;
 }
 
 #social-logo-container{
