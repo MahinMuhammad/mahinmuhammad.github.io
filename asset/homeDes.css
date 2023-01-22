@@ -25,7 +25,7 @@ body{
 /*	min-height: 50rem;
   max-height: 120rem;*/
   position:relative;
-/*  height: 100vh;*/
+  min-height: 100vh;
 }
 
 #logo{
@@ -69,12 +69,6 @@ h1{
 #footer{
 	background: #393E46;
 	height: 15rem;
-}
-
-@media screen and (min-height: 100vh){
-	#home{
-		height: 100vh;
-	}
 }
 
 #header-content{
