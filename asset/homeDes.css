@@ -12,14 +12,14 @@ html {
 }
 
 body{
-	margin: 0;
-	box-sizing: border-box;
-  position: relative;
-  line-height: 1.5;
-  font-family: sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 1.5;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #home{
@@ -41,8 +41,8 @@ body{
   margin-right: auto;
 }
 
-h1{
-	font-size: 3rem;
+#introduction{
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -56,11 +56,19 @@ h1{
 }
 
 .font-primary{
-	color: #333;
+    color: #333;
     font-size: 1.6rem;
     text-align: center;
     width: 100%;
     line-height:1.9rem;
+}
+
+.foot-big-font{
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:500;
 }
 
 #scrollDown{
@@ -70,25 +78,42 @@ h1{
 
 #footer{
 	background: #393E46;
-	height: 15rem;
+	height: 14rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+#footer-seperator{
+    width: 100%;
+    height: 0.03rem;
+    background: lightgrey;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#footer-main{
+    display: flex;
+    justify-content: space-between;
 }
 
 #header-content{
-	  display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding:1rem 4rem;
 }
 
-#social-logo-container{
-	display: flex;
-  align-items: center;
-  cursor: pointer;
-  color: #333;
-  transition:color .3s
+.social-logo-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition:color .3s
 }
 
-#social-logo-container:hover{
+.social-logo-container:hover{
 	color:#6D9886;
 }
 
@@ -117,8 +142,8 @@ h1{
 }
 
 .header__link{
-		padding-right: 2rem;
-/*    display: inline-block;*/
+    padding-right: 2rem;
+    /*    display: inline-block;*/
     font-size: 1.1rem;
     color: #333;
     text-transform: uppercase;
@@ -141,4 +166,93 @@ a:focus{
 
 li {
     list-style:none
+}
+
+#about{
+	background: #F7F7F7;
+	padding-top: 5rem;
+}
+
+.title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight:800
+}
+
+.secondary-title{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #111;
+    font-weight:bold;
+}
+
+.font-medium{
+  color: #555;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height:1.9rem;
+  margin: auto;
+  max-width: 40rem;
+  font-weight: 400;
+}
+
+#personal{
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+#personal-picture{
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 4rem;
+}
+
+#pic-vr-line{
+	background: grey;
+	height: 20rem;
+	width: 0.1rem;
+	margin-top: 4rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
+#personal-info{
+    margin-top: 6rem;
+}
+
+#personal-table{
+    column-width: 10rem;
+}
+
+.font-small{
+    color: #555;
+    font-size: 1.2rem;
+    line-height:1.9rem;
+    /*  margin: auto;*/
+    /*  max-width: 40rem;*/
+    font-weight: 350;
+    text-transform: uppercase;
+}
+
+.font-paragraph{
+    color: #555;
+    font-size: 1.2rem;
+    line-height:1.9rem;
+    max-width: 40rem;
+    font-weight: 500;
+}
+
+#professional{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
 }
