@@ -336,4 +336,23 @@ li {
 
 #contact-btn:hover{
     background-color: #039BE5;
+    cursor: pointer;
+}
+
+#message-field{
+    height: 10rem;
+    overflow-y: hidden;
+}
+
+#message-field textarea{
+    display: block;
+    outline: none;
+    border: none;
+    resize: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 20px 15px 20px 10px;
+    height: 100%;
+    width: 100%;
 }
