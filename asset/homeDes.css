@@ -279,4 +279,61 @@ li {
 #contact{
     background: #F7F7F7;
     padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#contact-box{
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    max-width: 50%;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.input-field{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.input-field input{
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 20px 15px 20px 10px;
+}
+
+#contact-btn {
+    display: block;
+    box-shadow: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    min-width: 30%;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+    padding-top: .5rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+#contact-btn:hover{
+    background-color: #039BE5;
 }
