@@ -250,7 +250,7 @@ li {
 #skills-holder{
     display: flex;
     width: 30rem;
-    height: 10rem;
+    height: fit-content;
     flex-wrap: wrap;
 }
 
