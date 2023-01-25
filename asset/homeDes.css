@@ -256,7 +256,7 @@ li {
 
 .skill-topic{
     padding: 0.6rem 1.3rem;
-    background: rgba(153, 153, 153, .2);
+    background-color: #ecf0f3;
     border-radius: 5px;
     width: fit-content;
     height: fit-content;
@@ -264,6 +264,7 @@ li {
     color:#666;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 6px 6px 13px #cbced1, -6px -6px 13px #fff;
 }
 
 #professional{
