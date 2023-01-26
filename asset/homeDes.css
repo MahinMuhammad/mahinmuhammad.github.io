@@ -3,13 +3,7 @@ html {
     scroll-behavior:smooth;
 }
 
-.header{
-	position: fixed;
-	background: #F2E7D5;
-/*	height: 5.5rem;*/
-	width: 100vw;
-	z-index: 1000;
-}
+
 
 body{
     margin: 0;
@@ -22,9 +16,19 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.header{
+    position: fixed;
+    background: #F2E7D5;
+    width: 100vw;
+    z-index: 1000;
+}
+
+#header-menu-container{
+    display: none;
+    cursor: pointer;
+}
+
 #home{
-/*	min-height: 50rem;
-  max-height: 120rem;*/
   padding-top: 5rem;
   position:relative;
   min-height: 100vh;
@@ -78,7 +82,7 @@ body{
 
 #footer{
 	background: #393E46;
-	height: 14rem;
+	height: fit-content;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-right: 8rem;
@@ -96,6 +100,7 @@ body{
 #footer-main{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #header-content{
@@ -141,6 +146,15 @@ body{
 	display:flex;
 }
 
+@media only screen and (max-width: 41.8em) {
+    #header-links {
+        display:none
+    }
+    #header-menu-container{
+        display: block;
+    }
+}
+
 .header__link{
     padding-right: 2rem;
     /*    display: inline-block;*/
@@ -171,6 +185,7 @@ li {
 #about{
 	background: #F7F7F7;
 	padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .title{
@@ -203,6 +218,7 @@ li {
 #personal{
 	display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 4rem;
 }
 
@@ -271,10 +287,12 @@ li {
     margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#projects{
+#projects-section{
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #project-holder{
@@ -312,12 +330,33 @@ li {
     border-radius: 1rem;
     opacity: 0.5;
     transition:opacity .4s;
+    text-indent: -9999px;
+    overflow-y: auto;
+}
+
+.envelop p{
+    width: 90%;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.envelop button{
+    visibility: hidden;
+    text-transform: uppercase;
+    min-width: 40%;
 }
 
 .envelop:hover{
     border-radius: 0rem;
-    cursor: pointer;
     opacity: 1;
+    text-indent: 0px;
+}
+
+.envelop:hover button{
+    visibility: visible;
 }
 
 #contact{
@@ -357,9 +396,10 @@ li {
     font-size: 1.2rem;
     color: #666;
     padding: 20px 15px 20px 10px;
+    width: 100%;
 }
 
-#contact-btn {
+button {
     display: block;
     box-shadow: none;
     border: none;
@@ -378,7 +418,7 @@ li {
     text-transform: uppercase;
 }
 
-#contact-btn:hover{
+button:hover{
     background-color: #039BE5;
     cursor: pointer;
 }
