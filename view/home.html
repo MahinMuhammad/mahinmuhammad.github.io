@@ -2,6 +2,7 @@
 <head>
 	<title>HOME</title>
 	<link rel="stylesheet" type="text/css" href="../asset/homeDes.css">
+	<script type="text/javascript" src="../asset/navMenu.js"></script>
 </head>
 
 <body>
@@ -45,9 +46,32 @@
 						<a href="#contact" class="header__link">Contact </a>
 					</li>
 				</ul>
-				<div id="header-menu-container">
-					<img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg">
+				<div id="header-menu-container" onclick="navMenuSwitch();">
+					<img id="bar-icon" src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg">
+					<img id="cross-icon" src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg">
 				</div>
+			</div>
+		</div>
+
+		<div id="header-menu">
+			<div id="menu-content">
+				<ul id="menu-links">
+					<li class="menu-link">
+						<a href="#home"> Home </a>
+					</li>
+						
+					<li class="menu-link">
+						<a href="#about"> About </a>
+					</li>
+
+					<li class="menu-link">
+						<a href="#projects-section">Projects </a>
+					</li>
+
+					<li class="menu-link">
+						<a href="#contact">Contact </a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>
