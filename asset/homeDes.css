@@ -67,12 +67,14 @@ body{
 }
 
 .menu-link:first-child a {
+    margin-top: -1rem;
     border-top:1px solid #eee
 }
 
-/*.menu-link:last-child a {
+.menu-link:last-child a {
     border-bottom:0;
-}*/
+    margin-bottom: -1rem;
+}
 
 #home{
   padding-top: 5rem;
