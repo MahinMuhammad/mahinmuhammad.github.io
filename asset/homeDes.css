@@ -361,7 +361,7 @@ li {
     margin-top: 3rem;
     display: flex;
     height: fit-content;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     width: 90%;
     margin-left: auto;
@@ -371,6 +371,7 @@ li {
 .project{
     width: 25rem;
     height: 15rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
     position: relative;
 }
