@@ -84,7 +84,7 @@ body{
 
 #logo{
 	height: auto;
-	width: 30%;
+	max-width: 30%;
 }
 
 .center {
