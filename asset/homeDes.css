@@ -83,8 +83,8 @@ body{
 }
 
 #logo{
-	height: 25rem;
-	width: 25rem;
+	height: auto;
+	width: 30%;
 }
 
 .center {
