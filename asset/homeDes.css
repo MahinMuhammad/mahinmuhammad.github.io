@@ -327,7 +327,7 @@ li {
 
 #skills-holder{
     display: flex;
-    width: 30rem;
+    max-width: 30rem;
     height: fit-content;
     flex-wrap: wrap;
 }
