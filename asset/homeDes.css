@@ -244,6 +244,11 @@ li {
     list-style:none
 }
 
+section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 #about{
 	background: #F7F7F7;
 	padding-top: 5rem;
