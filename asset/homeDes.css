@@ -454,6 +454,12 @@ section{
     }
 }
 
+@media only screen and (max-width: 50em){
+    #contact-box{
+        max-width: 90%;
+    }
+}
+
 .input-field{
     margin-left: auto;
     margin-right: auto;
