@@ -87,6 +87,24 @@ body{
 	max-width: 30%;
 }
 
+@media only screen and (max-width: 65em){
+    #logo{
+        max-width: 35%;
+    }
+}
+
+@media only screen and (max-width: 50em){
+    #logo{
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 40em){
+    #logo{
+        max-width: 55%;
+    }
+}
+
 .center {
   display: block;
   margin-left: auto;
