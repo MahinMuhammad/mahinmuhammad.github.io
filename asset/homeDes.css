@@ -413,7 +413,7 @@ li {
     min-width: 40%;
 }
 
-.envelop:hover, .envelop:active{
+.envelop:hover{
     border-radius: 0rem;
     opacity: 1;
     text-indent: 0px;
