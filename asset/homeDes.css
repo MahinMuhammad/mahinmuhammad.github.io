@@ -393,7 +393,7 @@ li {
     left:0px;
     border-radius: 1rem;
     opacity: 0.4;
-    transition:opacity .3s;
+/*    transition:opacity .3s;*/
     text-indent: -9999px;
     overflow-y: auto;
     cursor: pointer;
