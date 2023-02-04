@@ -155,6 +155,13 @@ body{
     padding-left: 8rem;
 }
 
+@media only screen and (max-width: 40em){
+    #logo{
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+}
+
 #footer-seperator{
     width: 100%;
     height: 0.03rem;
