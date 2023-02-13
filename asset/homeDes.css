@@ -3,7 +3,26 @@ html {
     scroll-behavior:smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0.45rem;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6D9886;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #698269; 
+}
 
 body{
     margin: 0;
@@ -422,7 +441,7 @@ section{
     left:0px;
     border-radius: 1rem;
     opacity: 0.4;
-/*    transition:opacity .3s;*/
+    transition:opacity .5s;
     text-indent: -9999px;
     overflow-y: auto;
     cursor: pointer;
