@@ -212,7 +212,7 @@ body{
 	display:flex;
 }
 
-@media only screen and (max-width: 41.8em) {
+@media only screen and (max-width: 47em) {
     #header-links {
         display:none
     }
@@ -236,7 +236,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 50em){
+@media only screen and (max-width: 56em){
     #header-content{
         padding: 1rem 1rem;
     }
