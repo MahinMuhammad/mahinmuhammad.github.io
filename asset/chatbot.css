@@ -39,23 +39,21 @@ iframe {
   height: 450px;
   border: none;
   z-index: 9999;
+  display: none;
 }
 
 #chatBotIcon{
   position: fixed;
-  bottom: 30rem;
-  right: 6rem;
-  width: 10rem;
-  height: 10rem;
+  top: 15%;
+  right: 3%;
   border: none;
   z-index: 9999;
-  display: none;
+  cursor: pointer;
 }
 
 #chatBotIcon img{
   height: 5rem;
   width: 5rem;
-  padding: 10rem;
 }
 
 @media only screen and (max-width: 65em){
