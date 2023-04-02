@@ -8,6 +8,7 @@ function iconClicked(){
     } 
     // == "" because I don't know why first time it gets "" as display type
     else{
+        document.getElementById("chatBotBox").contentWindow.document.getElementById("chatInput").value = ""; //taking element from iframe
         setTimeout(() => {
             document.getElementById("chatBotBox").style.opacity = "0";
         });
@@ -22,6 +23,7 @@ function iconClicked(){
 
 function submitChat(event){
     if(event.code == "Enter"){
-        alert("Chat bot is sleeping..Zzzz")
+        alert("Chat bot is sleeping..Zzzz");
+        document.getElementById("chatInput").value = "";
     }
 }
