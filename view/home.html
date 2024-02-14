@@ -18,6 +18,7 @@ limitations under the License. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>MAHIN</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../asset/homeDes.css">
 	<link rel="stylesheet" type="text/css" href="../asset/chatbot.css">
 	<script type="text/javascript" src="../asset/navMenu.js"></script>
@@ -38,7 +39,6 @@ limitations under the License. -->
 			<div class="social-logo-container">
 				<div class="palestine">
 					<img
-					class="social-logo-link"
 					src="https://flagcdn.com/32x24/ps.png"
 					srcset="https://flagcdn.com/64x48/ps.png 2x,
 					  https://flagcdn.com/96x72/ps.png 3x"
@@ -217,59 +217,166 @@ limitations under the License. -->
 
 	<!-- Projects Page -->
 
-	<section id="projects-section">
+	<section id="projects-section" class="container">
 		<h1 class="title">my projects</h1>
 		<p class="font-medium">Here are some projects I have done, their GitHub links or appstore links (if published)</p>
-		<p class="font-paragraph center maintanance-para">
-			⚠️This section is under maintanance. Please visit my 
-			<a href="https://github.com/MahinMuhammad#user-83515380-pinned-items-reorder-form" target="_blank"><font color="#6D9886"><strong><u>GitHub</u></strong></font></a>
-			to find my projects.
-		</p>
+		
+		<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-6">
+			  <h2 class="featurette-heading fw-normal lh-1">PressPilot <span class="text-body-secondary">- A News App</span></h2>
+			  <br>
+			  <p class="lead">PressPilot is an iOS app built with SwiftUI that uses API to fetch and display the news from all over the world. I have used SwiftUI, NewsAPI, third-
+				party libraries, WKWebview, UIViewRepresentable, Firebase Auth,
+				Firestore</p>
+			</div>
+			<div class="col-md-6">
+				<div id="carouselPressPilot" class="carousel carousel-dark slide">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselPressPilot" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselPressPilot" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#carouselPressPilot" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					  <button type="button" data-bs-target="#carouselPressPilot" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active" data-bs-interval="10000">
+						<img src="../asset/portfolio/pressPilot/news-page.jpeg" class="d-block w-100" alt="news screen">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="2000">
+						<img src="../asset/portfolio/pressPilot/settings.jpeg" class="d-block w-100" alt="settings screen">
+					  </div>
+					  <div class="carousel-item">
+						<img src="../asset/portfolio/pressPilot/signin.jpeg" class="d-block w-100" alt="signin screen">
+					  </div>
+					  <div class="carousel-item">
+						<img src="../asset/portfolio/pressPilot/profile.jpeg" class="d-block w-100" alt="profile screen">
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselPressPilot" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselPressPilot" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
+			</div>
+		  </div>
+		<hr class="featurette-divider">
 
-		<!-- <div id="project-holder">
-			<div class="project">
-				<img src="../asset/moto-hub.png">
-				<div id="env1" class="envelop" onclick="selectProjectCard(this.id);">
-					<p class="font-paragraph"><strong>Moto-Hub</strong> is an online platform to buy and sell vehicles. It can also be used to offer or request services for vehicles.</p>
-					<button onclick="alert('This module is under development process!');">case study</button>
-				</div>
+		<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-6 order-md-2">
+			  <h2 class="featurette-heading fw-normal lh-1">Poke <span class="text-body-secondary">- A Chat App</span></h2>
+			  <br>
+			  <p class="lead">Poke is a chatting app for iOS. It is simple and elegant. I have used SwiftUI, Firebase Auth, Firestore, Firebase cloud storage.</p>
 			</div>
-			<div class="project">
-				<img src="../asset/balanceTracker.png">
-				<div id="env2" class="envelop" onclick="selectProjectCard(this.id);">
-					<p class="font-paragraph"><strong>Balance Tracker</strong> is a web app developed to help user tack income, expense and record for more than one budget.</p>
-					<button onclick="alert('This module is under development process!');">case study</button>
-				</div>
+			<div class="col-md-6 order-md-1">
+			  <div id="carouselPoke" class="carousel carousel-dark slide">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselPoke" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselPoke" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#carouselPoke" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					  <button type="button" data-bs-target="#carouselPoke" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active" data-bs-interval="10000">
+						<img src="../asset/portfolio/poke/chatlist.jpeg" class="d-block w-100" alt="chatlist screen">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="2000">
+						<img src="../asset/portfolio/poke/chatbox.jpeg" class="d-block w-100" alt="chatbox screen">
+					  </div>
+					  <div class="carousel-item">
+						<img src="../asset/portfolio/poke/settings.jpeg" class="d-block w-100" alt="settings screen">
+					  </div>
+					  <div class="carousel-item">
+						<img src="../asset/portfolio/poke/signin.jpeg" class="d-block w-100" alt="signin screen">
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselPoke" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselPoke" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
 			</div>
-			<div class="project">
-				<img src="../asset/personal-website.png">
-				<div id="env3" class="envelop" onclick="selectProjectCard(this.id);">
-					<p class="font-paragraph">This Website is developed to fill the necessity of a <strong>Portfolio Website</strong> to showcase myself and my projects.</p>
-					<button onclick="alert('This module is under development process!');">case study</button>
-				</div>
+		  </div>
+		<hr class="featurette-divider">
+
+		<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-6">
+			  <h2 class="featurette-heading fw-normal lh-1">Al Quran Stream <span class="text-body-secondary">- Stream the full Al Quran</span></h2>
+			  <br>
+			  <p class="lead">Al Quran Stream is an iOS app to stream Al Quran audio from internet. I
+				have used: SwiftUI, AVFoundation, NSNotificationCenter, URLSession,
+				MVVM.</p>
 			</div>
-			<div class="project">
-				<img src="../asset/soft_calc_UI.jpeg">
-				<div id="env4" class="envelop" onclick="selectProjectCard(this.id);">
-					<p class="font-paragraph"><strong>Soft Calculator</strong> is an iOS app which has a simple UI and simple functions of a non-scientific calculator.</p>
-					<button onclick="alert('This module is under development process!');">case study</button>
-				</div>
+			<div class="col-md-6">
+				<div id="carouselStream" class="carousel carousel-dark slide">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active" data-bs-interval="10000">
+						<img src="../asset/portfolio/al-quran-stream/dark.jpeg" class="d-block w-100" alt="dark screen">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="2000">
+						<img src="../asset/portfolio/al-quran-stream/light.jpeg" class="d-block w-100" alt="light screen">
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselStream" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselStream" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
 			</div>
-			<div class="project">
-				<img src="../asset/chipher_cpp.png">
-				<div id="env5" class="envelop" onclick="selectProjectCard(this.id);">
-					<p class="font-paragraph"><strong>Cipher</strong> is a command line program developed in C++ that performs encoding, decoding like <strong>Caesar Cipher</strong></p>
-					<button onclick="alert('This module is under development process!');">case study</button>
-				</div>
+		  </div>
+		<hr class="featurette-divider">
+
+		<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-6 order-md-2">
+			  <h2 class="featurette-heading fw-normal lh-1">PhotoPage <span class="text-body-secondary">- A Photo Editing App</span></h2>
+			  <br>
+			  <p class="lead">PhotoPage is an iOS app built with UIKit. Here user can store, Edit images from the Photos app. I have used UIKit, CoreImage, Coredata, CollectionView,
+				PickerControllerDeligate, DocumentsDirectory</p>
 			</div>
-			<div class="project">
-				<img src="../asset/app_store.png">
-				<div id="env6" class="envelop" onclick="selectProjectCard(this.id);">
-					<p class="font-paragraph"><strong>App Store</strong> is a console based program that serves as a <strong>Application Store</strong> model to demostrate <strong>OOP</strong> in java</p>
-					<button tonclick="alert('This module is under development process!');">case study</button>
-				</div>
+			<div class="col-md-6 order-md-1">
+			  <div id="carouselPhootPage" class="carousel carousel-dark slide">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselPhootPage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselPhootPage" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active" data-bs-interval="10000">
+						<img src="../asset/portfolio/photopage/galary.jpeg" class="d-block w-100" alt="galary screen">
+					  </div>
+					  <div class="carousel-item" data-bs-interval="2000">
+						<img src="../asset/portfolio/photopage/edit.jpeg" class="d-block w-100" alt="edit screen">
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselPhootPage" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselPhootPage" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
 			</div>
-		</div> -->
+		  </div>
+		<hr class="featurette-divider">
 	</section>
 
 	<!-- Contact Page -->
@@ -344,5 +451,8 @@ limitations under the License. -->
 		<div id="footer-seperator"></div>
 		<p align="center" style="color: white; font-size: 0.8rem;">© 2023 <a style="color: white" href=""><u>Md. Mahinur Rahman</u></a></p>
 	</section>
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

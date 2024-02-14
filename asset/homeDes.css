@@ -235,7 +235,7 @@ body{
 }
 
 .social-logo-link{
-/*	width: 100%;*/
+	/* width: 100%; */
   display: block;
   padding: .5rem;
   transition: background .3s;
@@ -455,7 +455,7 @@ section{
     border-radius: 1rem;
 }
 
-.envelop{
+/* .envelop{
     background: #F2E7D5;
     position: absolute;
     width: 100%;
@@ -484,7 +484,7 @@ section{
     visibility: hidden;
     text-transform: uppercase;
     min-width: 40%;
-}
+} */
 
 /*.envelop:hover{
     border-radius: 0rem;
@@ -548,7 +548,7 @@ section{
     width: 100%;
 }
 
-button {
+#contact-btn {
     display: block;
     box-shadow: none;
     border: none;
@@ -567,7 +567,7 @@ button {
     text-transform: uppercase;
 }
 
-button:hover{
+#contact-btn:hover{
     background-color: #039BE5;
     cursor: pointer;
 }
@@ -599,4 +599,9 @@ button:hover{
 .maintanance-para{
     margin-top: 15rem;
     margin-bottom: 15rem;
+}
+
+.featurette-divider{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
