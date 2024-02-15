@@ -18,7 +18,7 @@ function iconClicked(){
         setTimeout(() => {
             document.getElementById("chatBotBox").style.opacity = "1";
         });
-        document.getElementById("chatBotIcon").innerHTML = '<img src="../asset/minimizeIcon.png"></img>';
+        document.getElementById("chatBotIcon").innerHTML = '<img src="../assets/icons/minimizeIcon.png"></img>';
     } 
     // == "" because I don't know why first time it gets "" as display type
     else{
@@ -30,7 +30,7 @@ function iconClicked(){
             document.getElementById("chatBotBox").style.display = "none";
         }, 500);
         setTimeout(() => {
-            document.getElementById("chatBotIcon").innerHTML = '<img src="../asset/chatbot.png"></img>';
+            document.getElementById("chatBotIcon").innerHTML = '<img src="../assets/icons/chatbot.png"></img>';
         }, 200);
     }
 }
