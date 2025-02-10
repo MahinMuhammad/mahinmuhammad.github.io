@@ -1,12 +1,25 @@
 document.getElementById("contact-btn").addEventListener("click", async function () {
     const name = document.getElementById("nameField").value;
-    const email = document.getElementById("emailField").value;
+    const email = document.getElementById("emailField").value.trim();
     const message = document.getElementById("messageField").value;
+    const button = document.getElementById("contact-btn");
 
+    
     if (!name || !email || !message) {
         alert("Please fill in all fields.");
         return;
     }
+
+    // Validate email using regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Prevent multiple submissions
+    button.disabled = true;
+    button.innerText = "Submitting...";
 
     const contactData = { name, email, message };
 
@@ -30,5 +43,9 @@ document.getElementById("contact-btn").addEventListener("click", async function 
     } catch (error) {
         console.error("Error:", error);
         alert("An error occurred. Please try again later.");
+    } finally{
+        // Re-enable button
+        button.disabled = false;
+        button.innerText = "Submit";
     }
 });
