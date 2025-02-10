@@ -23,8 +23,6 @@ limitations under the License. -->
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../styles/homeDes.css">
 	<link rel="stylesheet" type="text/css" href="../styles/chatbot.css">
-	<script type="text/javascript" src="../scripts/navMenu.js"></script>
-	<script type="text/javascript" src="../scripts/chatBot.js"></script>
 	<link rel="icon" type="image/x-icon" href="../assets/icons/mahinsLogo.png">
 	<link rel="preload" as="image" href="../assets/icons/minimizeIcon.png">
 </head>
@@ -465,18 +463,17 @@ limitations under the License. -->
 			<form method="post" action="">
 				<label>Name</label>
 				<div class="input-field">
-					<input type="text" name="name" placeholder="Enter Your Name" value="">
+					<input id="nameField" type="text" name="name" placeholder="Enter Your Name" value="">
 				</div>
 				<label>Email</label>
 				<div class="input-field">
-					<input type="text" name="email" placeholder="Enter Your Email" value="">
+					<input id="emailField" type="text" name="email" placeholder="Enter Your Email" value="">
 				</div>
 				<label>Message</label>
 				<div id="message-field" class="input-field">
-					<textarea type="text" name="message" placeholder="Enter Your Message"></textarea>
+					<textarea id="messageField" type="text" name="message" placeholder="Enter Your Message"></textarea>
 				</div>
-				<button id="contact-btn" type="button"
-					onclick="alert('This module is under development process!');">submit</button>
+				<button id="contact-btn" type="button">submit</button>
 			</form>
 		</div>
 	</section>
@@ -537,9 +534,14 @@ limitations under the License. -->
 	</section>
 
 	<!-- Scripts -->
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="../scripts/navMenu.js"></script>
+	<script type="text/javascript" src="../scripts/chatBot.js"></script>
+	<script type="text/javascript" src="../scripts/contact.js"></script>
 </body>
 
 </html>
